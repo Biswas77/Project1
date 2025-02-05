@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+    .topnav {
+      background-color: rgba(0, 0, 0, 0.507);
+      overflow: auto;
+      position: sticky;
+      display: flex;
+      align-items: center;
+    }
+
+    .topnav a {
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    .topnav img {
+      padding: 10px;
+    }
+
+    .topnav a:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+
+
+    body {
+      background-color: black;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+
+    #text {
+      color: white;
+    }
+
+
+    .movie-recom img:hover {
+      transform: scale(1.2);
+      transition: transform 0.3s ease;
+    }
+
+
+    .movie-recom {
+      padding: 10px;
+      display: flex;
+      justify-content: space-evenly;
+      overflow: hidden;
+    }
+
+
+    .movie-recom img {
+      border-radius: 10px;
+    }
+    .btn btn-primary:hover{
+      z-index: 1;
+      transform: scale(1.2);
+      background-color: transparent;
+      color: white;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topnav">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_JlGPviuDMo3ybjNTkSN1fEie7WqH9JCF_w&s" height="70px" alt="ZEE5 Logo">
+    <a href="">Home</a>
+    <a href="">TV Shows</a>
+    <a href="">Movies</a>
+    <a href="">Premium</a>
+    <a href="">News</a>
+
+    <div class="searchbox">
+      <form action="" method="post">
+        <label for="search" aria-autocomplete="off"></label>
+        <input type="text" name="" id="search" placeholder="Search for Movies"
+          style="background-color: hsla(0, 100%, 1%, 0.171); border-radius: 10px; display: inline-flex;">
+      </form>
+    </div>
+    <button class="btn btn-primary" style="margin-left: auto; background-color: black;">Login</button>
+    <button class="btn btn-success" style="background-color: violet;">Buy Plan</button>
+  </div>
+
+  <br>
+
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <center><img src="https://wallpapercave.com/wp/wp8807450.jpg" class="d-block" alt="Poster 3" height="500px" width="1000px"></center>
+      </div>
+      <div class="carousel-item">
+        <center><img src="https://wallpapercave.com/wp/wp12022660.jpg" class="d-block" alt="Poster 2" height="500px" width="1000px"></center>
+      </div>
+      <div class="carousel-item">
+        <center><img src="https://wallpapercave.com/wp/wp4102519.jpg" class="d-block" alt="Poster 1" height="500px" width="1000px"></center>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <br>
+
+
+  <div>
+    <h3 style="color: white;"><b>Movie Recommendations</b></h3>
+  </div>
+
+  <div class="movie-recom">
+    <a href=""><img src="https://wallpapercave.com/wp/wp2281974.jpg" alt="Movie 1" height="200px" width="200px"></a>
+    <a href=""><img src="https://wallpapercave.com/wp/wp5115631.jpg" alt="Movie 2" height="200px" width="200px"></a>
+    <a href=""><img src="https://wallpapercave.com/wp/wp8807417.jpg" alt="Movie 3" height="200px" width="200px"></a>
+    <a href=""><img src="https://wallpapercave.com/wp/wp8807440.jpg" alt="Movie 4" height="200px" width="200px"></a>
+    <a href=""><img src="https://wallpapercave.com/wp/wp8807450.jpg" alt="Movie 5" height="200px" width="200px"></a>
+    <a href=""><img src="https://wallpapercave.com/wp/wp4102519.jpg" alt="Movie 6" height="200px" width="200px"></a>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
